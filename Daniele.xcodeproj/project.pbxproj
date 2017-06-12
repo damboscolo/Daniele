@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8353E9CE1EEE0C1F004D793A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353E9CD1EEE0C1F004D793A /* AppDelegate.swift */; };
-		8353E9D01EEE0C1F004D793A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353E9CF1EEE0C1F004D793A /* ViewController.swift */; };
+		8353E9D01EEE0C1F004D793A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353E9CF1EEE0C1F004D793A /* TableViewController.swift */; };
 		8353E9D31EEE0C1F004D793A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8353E9D11EEE0C1F004D793A /* Main.storyboard */; };
 		8353E9D51EEE0C1F004D793A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8353E9D41EEE0C1F004D793A /* Assets.xcassets */; };
 		8353E9D81EEE0C1F004D793A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8353E9D61EEE0C1F004D793A /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		8353E9CA1EEE0C1F004D793A /* Daniele.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daniele.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8353E9CD1EEE0C1F004D793A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8353E9CF1EEE0C1F004D793A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8353E9CF1EEE0C1F004D793A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8353E9D21EEE0C1F004D793A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8353E9D41EEE0C1F004D793A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8353E9D71EEE0C1F004D793A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8353E9CD1EEE0C1F004D793A /* AppDelegate.swift */,
-				8353E9CF1EEE0C1F004D793A /* ViewController.swift */,
+				8353E9CF1EEE0C1F004D793A /* TableViewController.swift */,
 				8353E9D11EEE0C1F004D793A /* Main.storyboard */,
 				8353E9D41EEE0C1F004D793A /* Assets.xcassets */,
 				8353E9D61EEE0C1F004D793A /* LaunchScreen.storyboard */,
@@ -193,13 +193,11 @@
 				TargetAttributes = {
 					8353E9C91EEE0C1F004D793A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = BZ2LF24KZ7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					8353E9DD1EEE0C1F004D793A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = BZ2LF24KZ7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 8353E9C91EEE0C1F004D793A;
 					};
 					8353E9E81EEE0C1F004D793A = {
@@ -262,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8353E9D01EEE0C1F004D793A /* ViewController.swift in Sources */,
+				8353E9D01EEE0C1F004D793A /* TableViewController.swift in Sources */,
 				8353E9CE1EEE0C1F004D793A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,11 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BZ2LF24KZ7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Daniele/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.damboscolo.Daniele;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,11 +429,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BZ2LF24KZ7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Daniele/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.damboscolo.Daniele;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -444,11 +444,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BZ2LF24KZ7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DanieleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.damboscolo.DanieleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daniele.app/Daniele";
 			};
@@ -459,11 +460,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BZ2LF24KZ7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DanieleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.damboscolo.DanieleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daniele.app/Daniele";
 			};
